@@ -2,19 +2,19 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-# SQL_ALCHEMY_DATABASE_URI = 'sqlite:///./todosapp.db' #sqlite db
-#Create a db engine
-# engine = create_engine(SQL_ALCHEMY_DATABASE_URI, connect_args={'check_same_thread': False}) 
+SQL_ALCHEMY_DATABASE_URI = 'sqlite:///./todosapp.db' #sqlite db
+# Create a db engine
+engine = create_engine(SQL_ALCHEMY_DATABASE_URI, connect_args={'check_same_thread': False}) 
 
 #POSTGTRSQL DATABASE
-SQL_ALCHEMY_DATABASE_URI = 'postgresql://postgres:1234@localhost/TodoApplicationDb' #Postgres db
+# SQL_ALCHEMY_DATABASE_URI = 'postgresql://postgres:1234@localhost/TodoApplicationDb' #Postgres db
 
 
 #MYSQL DATABASE
 # SQL_ALCHEMY_DATABASE_URI = 'mysql+pymysql://root:rt_123@127.0.0.1:3306/TodoApplicationDatabase' #Mysql db
 
 #Create a db engine
-engine = create_engine(SQL_ALCHEMY_DATABASE_URI)
+# engine = create_engine(SQL_ALCHEMY_DATABASE_URI)
 
 
 #Bydefault SQLite allow only one thread to connect to it at a time, 
